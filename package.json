@@ -17,11 +17,9 @@
     "dev": "pnpm build:hmr && (run-p wss build:watch)",
     "dev:firefox": "pnpm build:hmr && (run-p wss build:firefox:watch)",
     "test": "vitest",
-    "commitlint": "commitlint --edit",
     "lint": "eslint src --ext .ts,.js,.tsx,.jsx",
     "lint:fix": "pnpm lint --fix",
-    "prettier": "prettier . --write",
-    "prepare": "husky install"
+    "prettier": "prettier . --write"
   },
   "type": "module",
   "dependencies": {
@@ -40,6 +38,7 @@
     "@types/node": "20.8.10",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.18",
+    "@types/webextension-polyfill": "^0.10.7",
     "@types/ws": "8.5.8",
     "@typescript-eslint/eslint-plugin": "6.10.0",
     "@typescript-eslint/parser": "6.18.1",
@@ -75,6 +74,5 @@
       "prettier --write",
       "eslint --fix"
     ]
-  },
-  "packageManager": "pnpm@8.9.2"
+  }
 }
